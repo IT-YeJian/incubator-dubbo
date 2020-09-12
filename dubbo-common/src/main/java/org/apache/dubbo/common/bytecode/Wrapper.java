@@ -113,7 +113,7 @@ public abstract class Wrapper {
             return OBJECT_WRAPPER;
         }
 
-        return WRAPPER_MAP.computeIfAbsent(c, Wrapper::makeWrapper);
+        return WRAPPER_MAP.computeIfAbsent(c, key -> makeWrapper(key));
     }
 
     private static Wrapper makeWrapper(Class<?> c) {

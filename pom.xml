@@ -583,8 +583,6 @@
                                 </exclude>
                                 <exclude>.github/**</exclude>
                                 <exclude>compiler/**</exclude>
-                                <!-- exclude mockito extensions spi files -->
-                                <exclude>**/mockito-extensions/*</exclude>
                             </excludes>
                         </configuration>
                     </execution>
